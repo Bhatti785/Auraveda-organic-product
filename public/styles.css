@@ -6,16 +6,18 @@
 }
 
 :root {
-  --primary-green: #4a7c59;
-  --light-green: #7cb342;
-  --beige: #f5f0e6;
-  --cream: #faf8f5;
+  --primary-navy: #1a365d;
+  --primary-gold: #c9a227;
+  --light-gold: #d4af37;
+  --cream: #faf9f6;
   --white: #ffffff;
-  --dark-text: #2c3e50;
-  --light-text: #7f8c8d;
-  --border-color: #e0e0e0;
-  --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  --shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --dark-text: #1a1a1a;
+  --light-text: #666666;
+  --border-color: #d4d4d4;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --gradient: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+  --gold-gradient: linear-gradient(135deg, #c9a227 0%, #d4af37 100%);
 }
 
 body {
@@ -62,19 +64,19 @@ body {
 .hamburger span {
   width: 25px;
   height: 3px;
-  background-color: var(--primary-green);
+  background-color: var(--primary-navy);
   transition: all 0.3s ease;
 }
 
 .logo {
   font-size: 1.8rem;
   font-weight: 700;
-  color: var(--primary-green);
+  color: var(--primary-navy);
   text-decoration: none;
 }
 
 .logo a {
-  color: var(--primary-green);
+  color: var(--primary-navy);
   text-decoration: none;
 }
 
@@ -86,7 +88,7 @@ body {
 
 .cart-icon {
   position: relative;
-  color: var(--primary-green);
+  color: var(--primary-navy);
   text-decoration: none;
 }
 
@@ -94,7 +96,7 @@ body {
   position: absolute;
   top: -8px;
   right: -8px;
-  background-color: var(--light-green);
+  background-color: var(--primary-gold);
   color: var(--white);
   font-size: 0.75rem;
   padding: 2px 6px;
@@ -145,7 +147,7 @@ body {
 }
 
 .drawer-link:hover {
-  color: var(--primary-green);
+  color: var(--primary-navy);
 }
 
 .drawer-section {
@@ -176,20 +178,20 @@ body {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, var(--beige) 0%, var(--cream) 100%);
+  background: var(--gradient);
   padding: 80px 20px;
   text-align: center;
 }
 
 .hero-content h1 {
   font-size: 2.5rem;
-  color: var(--primary-green);
+  color: var(--white);
   margin-bottom: 20px;
 }
 
 .hero-content p {
   font-size: 1.2rem;
-  color: var(--light-text);
+  color: rgba(255, 255, 255, 0.9);
   margin-bottom: 30px;
 }
 
@@ -207,23 +209,23 @@ body {
 }
 
 .btn-primary {
-  background-color: var(--primary-green);
+  background-color: var(--primary-navy);
   color: var(--white);
 }
 
 .btn-primary:hover {
-  background-color: var(--light-green);
+  background-color: var(--primary-gold);
   transform: translateY(-2px);
 }
 
 .btn-secondary {
   background-color: var(--white);
-  color: var(--primary-green);
-  border: 2px solid var(--primary-green);
+  color: var(--primary-navy);
+  border: 2px solid var(--primary-navy);
 }
 
 .btn-secondary:hover {
-  background-color: var(--primary-green);
+  background-color: var(--primary-navy);
   color: var(--white);
 }
 
@@ -242,13 +244,13 @@ body {
 }
 
 .section-light {
-  background-color: var(--beige);
+  background-color: var(--cream);
 }
 
 .section-title {
   text-align: center;
   font-size: 2rem;
-  color: var(--primary-green);
+  color: var(--primary-navy);
   margin-bottom: 40px;
 }
 
@@ -285,8 +287,8 @@ body {
 
 .product-category {
   display: inline-block;
-  background-color: var(--beige);
-  color: var(--primary-green);
+  background-color: var(--cream);
+  color: var(--primary-navy);
   padding: 4px 12px;
   border-radius: 20px;
   font-size: 0.85rem;
@@ -301,7 +303,7 @@ body {
 
 .product-price {
   font-size: 1.3rem;
-  color: var(--primary-green);
+  color: var(--primary-gold);
   font-weight: 700;
 }
 
@@ -314,7 +316,7 @@ body {
 .add-to-cart {
   width: 100%;
   padding: 10px;
-  background-color: var(--primary-green);
+  background-color: var(--primary-navy);
   color: var(--white);
   border: none;
   border-radius: 5px;
@@ -325,7 +327,7 @@ body {
 }
 
 .add-to-cart:hover {
-  background-color: var(--light-green);
+  background-color: var(--primary-gold);
 }
 
 /* Categories Grid */
@@ -336,7 +338,7 @@ body {
 }
 
 .category-card {
-  background: linear-gradient(135deg, var(--primary-green) 0%, var(--light-green) 100%);
+  background: var(--gold-gradient);
   color: var(--white);
   padding: 40px 20px;
   border-radius: 10px;
@@ -364,7 +366,7 @@ body {
 
 .about-text h2 {
   font-size: 2rem;
-  color: var(--primary-green);
+  color: var(--primary-navy);
   margin-bottom: 20px;
 }
 
@@ -391,19 +393,19 @@ body {
 
 /* Page Header */
 .page-header {
-  background: linear-gradient(135deg, var(--beige) 0%, var(--cream) 100%);
+  background: var(--gradient);
   padding: 60px 20px;
   text-align: center;
 }
 
 .page-header h1 {
   font-size: 2.5rem;
-  color: var(--primary-green);
+  color: var(--white);
   margin-bottom: 10px;
 }
 
 .page-header p {
-  color: var(--light-text);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 1.1rem;
 }
 
@@ -450,7 +452,7 @@ body {
 }
 
 .cart-item-price {
-  color: var(--primary-green);
+  color: var(--primary-gold);
   font-weight: 700;
 }
 
@@ -471,7 +473,7 @@ body {
 }
 
 .quantity-btn:hover {
-  background-color: var(--beige);
+  background-color: var(--cream);
 }
 
 .remove-btn {
@@ -493,7 +495,7 @@ body {
 
 .cart-summary h2 {
   font-size: 1.5rem;
-  color: var(--primary-green);
+  color: var(--primary-navy);
   margin-bottom: 20px;
 }
 
@@ -507,7 +509,7 @@ body {
 .summary-row.total {
   font-size: 1.3rem;
   font-weight: 700;
-  color: var(--primary-green);
+  color: var(--primary-gold);
   border-bottom: none;
   margin-top: 10px;
 }
@@ -550,7 +552,7 @@ body {
 
 .checkout-form h2 {
   font-size: 1.5rem;
-  color: var(--primary-green);
+  color: var(--primary-navy);
   margin-bottom: 30px;
 }
 
@@ -580,18 +582,18 @@ body {
 .form-group textarea:focus,
 .form-group select:focus {
   outline: none;
-  border-color: var(--primary-green);
+  border-color: var(--primary-navy);
 }
 
 .payment-info {
-  background-color: var(--beige);
+  background-color: var(--cream);
   padding: 20px;
   border-radius: 5px;
   margin: 20px 0;
 }
 
 .payment-info h3 {
-  color: var(--primary-green);
+  color: var(--primary-navy);
   margin-bottom: 15px;
 }
 
@@ -617,7 +619,7 @@ body {
 
 .order-summary h2 {
   font-size: 1.5rem;
-  color: var(--primary-green);
+  color: var(--primary-navy);
   margin-bottom: 20px;
 }
 
@@ -668,7 +670,7 @@ body {
 
 .product-details .product-price {
   font-size: 2rem;
-  color: var(--primary-green);
+  color: var(--primary-gold);
   font-weight: 700;
   margin-bottom: 30px;
 }
@@ -729,7 +731,7 @@ body {
 }
 
 .success-icon {
-  color: var(--primary-green);
+  color: var(--primary-gold);
   margin-bottom: 20px;
 }
 
@@ -739,7 +741,7 @@ body {
 }
 
 .modal-content h2 {
-  color: var(--primary-green);
+  color: var(--primary-navy);
   margin-bottom: 15px;
 }
 
@@ -765,7 +767,7 @@ body {
 .about-mission h2,
 .about-quality h2 {
   font-size: 2rem;
-  color: var(--primary-green);
+  color: var(--primary-navy);
   margin-bottom: 20px;
 }
 
@@ -793,12 +795,12 @@ body {
 }
 
 .value-icon {
-  color: var(--primary-green);
+  color: var(--primary-navy);
   margin-bottom: 20px;
 }
 
 .value-card h3 {
-  color: var(--primary-green);
+  color: var(--primary-navy);
   margin-bottom: 15px;
 }
 
@@ -818,7 +820,7 @@ body {
 
 /* CTA Section */
 .cta-section {
-  background: linear-gradient(135deg, var(--primary-green) 0%, var(--light-green) 100%);
+  background: var(--gold-gradient);
   color: var(--white);
   padding: 60px 20px;
   text-align: center;
@@ -836,11 +838,11 @@ body {
 
 .cta-section .btn {
   background-color: var(--white);
-  color: var(--primary-green);
+  color: var(--primary-navy);
 }
 
 .cta-section .btn:hover {
-  background-color: var(--beige);
+  background-color: var(--cream);
 }
 
 /* Contact Page */
@@ -853,7 +855,7 @@ body {
 .contact-info h2,
 .contact-form h2 {
   font-size: 1.8rem;
-  color: var(--primary-green);
+  color: var(--primary-navy);
   margin-bottom: 20px;
 }
 
@@ -874,7 +876,7 @@ body {
 }
 
 .contact-icon {
-  color: var(--primary-green);
+  color: var(--primary-navy);
   flex-shrink: 0;
 }
 
@@ -898,7 +900,7 @@ body {
 
 /* Admin Dashboard */
 .admin-nav {
-  background-color: var(--primary-green);
+  background-color: var(--primary-navy);
 }
 
 .admin-nav .logo {
@@ -913,7 +915,7 @@ body {
 
 .admin-nav .btn-secondary {
   background-color: var(--white);
-  color: var(--primary-green);
+  color: var(--primary-navy);
   border-color: var(--white);
 }
 
@@ -947,11 +949,11 @@ body {
 }
 
 .admin-tab:hover {
-  background-color: var(--beige);
+  background-color: var(--cream);
 }
 
 .admin-tab.active {
-  background-color: var(--primary-green);
+  background-color: var(--primary-navy);
   color: var(--white);
 }
 
@@ -978,18 +980,18 @@ body {
 }
 
 .admin-header h2 {
-  color: var(--primary-green);
+  color: var(--primary-navy);
 }
 
 .product-form {
-  background-color: var(--beige);
+  background-color: var(--cream);
   padding: 30px;
   border-radius: 10px;
   margin-bottom: 30px;
 }
 
 .product-form h3 {
-  color: var(--primary-green);
+  color: var(--primary-navy);
   margin-bottom: 20px;
 }
 
@@ -1016,8 +1018,8 @@ body {
 }
 
 .admin-table th {
-  background-color: var(--beige);
-  color: var(--primary-green);
+  background-color: var(--cream);
+  color: var(--primary-navy);
   font-weight: 600;
 }
 
@@ -1038,7 +1040,7 @@ body {
 }
 
 .edit-btn {
-  background-color: var(--primary-green);
+  background-color: var(--primary-navy);
   color: var(--white);
 }
 
@@ -1048,7 +1050,7 @@ body {
 }
 
 .view-btn {
-  background-color: var(--light-green);
+  background-color: var(--primary-gold);
   color: var(--white);
 }
 
@@ -1095,7 +1097,7 @@ body {
 
 .footer-section h3,
 .footer-section h4 {
-  color: var(--light-green);
+  color: var(--primary-gold);
   margin-bottom: 20px;
 }
 
@@ -1112,7 +1114,7 @@ body {
 }
 
 .footer-section a:hover {
-  color: var(--light-green);
+  color: var(--primary-gold);
 }
 
 .footer-bottom {
