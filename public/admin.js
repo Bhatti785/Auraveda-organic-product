@@ -248,7 +248,7 @@ function viewOrder(orderId) {
       modalContent.innerHTML = `
         <div style="text-align: left;">
           <div style="margin-bottom: 20px;">
-            <h3 style="color: var(--primary-green); margin-bottom: 10px;">Order Information</h3>
+            <h3 style="color: var(--primary-navy); margin-bottom: 10px;">Order Information</h3>
             <p><strong>Order ID:</strong> ${order.id}</p>
             <p><strong>Date:</strong> ${new Date(order.createdAt).toLocaleString()}</p>
             <p><strong>Status:</strong> <span class="status-badge status-${order.status}">${order.status}</span></p>
@@ -256,7 +256,7 @@ function viewOrder(orderId) {
           </div>
 
           <div style="margin-bottom: 20px;">
-            <h3 style="color: var(--primary-green); margin-bottom: 10px;">Customer Details</h3>
+            <h3 style="color: var(--primary-navy); margin-bottom: 10px;">Customer Details</h3>
             <p><strong>Name:</strong> ${order.customer.name}</p>
             <p><strong>Phone:</strong> ${order.customer.phone}</p>
             <p><strong>Address:</strong> ${order.customer.address}</p>
@@ -264,7 +264,7 @@ function viewOrder(orderId) {
           </div>
 
           <div style="margin-bottom: 20px;">
-            <h3 style="color: var(--primary-green); margin-bottom: 10px;">Order Items</h3>
+            <h3 style="color: var(--primary-navy); margin-bottom: 10px;">Order Items</h3>
             ${order.items.map(item => `
               <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--border-color);">
                 <span>${item.name} × ${item.quantity}</span>
@@ -274,7 +274,7 @@ function viewOrder(orderId) {
           </div>
 
           <div>
-            <h3 style="color: var(--primary-green); margin-bottom: 10px;">Order Summary</h3>
+            <h3 style="color: var(--primary-navy); margin-bottom: 10px;">Order Summary</h3>
             <div style="display: flex; justify-content: space-between; padding: 10px 0;">
               <span>Subtotal:</span>
               <span>₹${order.subtotal.toLocaleString()}</span>
@@ -283,14 +283,14 @@ function viewOrder(orderId) {
               <span>Shipping:</span>
               <span>₹${order.shipping.toLocaleString()}</span>
             </div>
-            <div style="display: flex; justify-content: space-between; padding: 10px 0; font-weight: 700; font-size: 1.2rem; color: var(--primary-green);">
+            <div style="display: flex; justify-content: space-between; padding: 10px 0; font-weight: 700; font-size: 1.2rem; color: var(--primary-gold);">
               <span>Total:</span>
               <span>₹${order.total.toLocaleString()}</span>
             </div>
           </div>
 
           <div style="margin-top: 30px;">
-            <h3 style="color: var(--primary-green); margin-bottom: 10px;">Update Status</h3>
+            <h3 style="color: var(--primary-navy); margin-bottom: 10px;">Update Status</h3>
             <select id="orderStatus" style="padding: 10px; border: 1px solid var(--border-color); border-radius: 5px; width: 100%;">
               <option value="pending" ${order.status === 'pending' ? 'selected' : ''}>Pending</option>
               <option value="processing" ${order.status === 'processing' ? 'selected' : ''}>Processing</option>
