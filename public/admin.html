@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - Auravida</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Admin Navigation -->
+  <nav class="navbar admin-nav">
+    <div class="nav-container">
+      <div class="logo">Auravida Admin</div>
+      <div class="nav-actions">
+        <span id="adminUsername" style="color: white; margin-right: 15px;"></span>
+        <button class="btn btn-secondary btn-sm" id="logoutBtn">Logout</button>
+        <a href="index.html" class="btn btn-secondary btn-sm">Back to Store</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Admin Dashboard -->
+  <section class="section">
+    <div class="container">
+      <div class="admin-dashboard">
+        <!-- Sidebar -->
+        <div class="admin-sidebar">
+          <button class="admin-tab active" data-tab="products">Products</button>
+          <button class="admin-tab" data-tab="orders">Orders</button>
+        </div>
+
+        <!-- Content Area -->
+        <div class="admin-content">
+          <!-- Products Tab -->
+          <div id="productsTab" class="admin-tab-content active">
+            <div class="admin-header">
+              <h2>Manage Products</h2>
+              <button class="btn btn-primary" id="addProductBtn">Add New Product</button>
+            </div>
+
+            <!-- Add/Edit Product Form -->
+            <div id="productForm" class="product-form" style="display: none;">
+              <h3 id="formTitle">Add New Product</h3>
+              <form id="addProductForm">
+                <input type="hidden" id="productId">
+                <div class="form-group">
+                  <label for="productName">Product Name *</label>
+                  <input type="text" id="productName" required placeholder="Enter product name">
+                </div>
+                <div class="form-group">
+                  <label for="productPrice">Price (₹) *</label>
+                  <input type="number" id="productPrice" required placeholder="Enter price" min="0" step="1">
+                </div>
+                <div class="form-group">
+                  <label for="productCategory">Category *</label>
+                  <select id="productCategory" required>
+                    <option value="">Select Category</option>
+                    <option value="Clearance Sale">Clearance Sale</option>
+                    <option value="New Arrivals">New Arrivals</option>
+                    <option value="Face Washes">Face Washes</option>
+                    <option value="Serums">Serums</option>
+                    <option value="Haircare">Haircare</option>
+                    <option value="Makeup">Makeup</option>
+                    <option value="Bodycare">Bodycare</option>
+                    <option value="Men">Men</option>
+                    <option value="Skincare">Skincare</option>
+                    <option value="Kids">Kids</option>
+                    <option value="Soaps">Soaps</option>
+                    <option value="Gifting">Gifting</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="productImage">Image URL *</label>
+                  <input type="url" id="productImage" required placeholder="Enter image URL">
+                </div>
+                <div class="form-group">
+                  <label for="productDescription">Description *</label>
+                  <textarea id="productDescription" required placeholder="Enter product description" rows="3"></textarea>
+                </div>
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-primary">Save Product</button>
+                  <button type="button" class="btn btn-secondary" id="cancelProductBtn">Cancel</button>
+                </div>
+              </form>
+            </div>
+
+            <!-- Products Table -->
+            <div class="admin-table">
+              <table id="productsTable">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="productsTableBody">
+                  <!-- Products will be loaded here -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Orders Tab -->
+          <div id="ordersTab" class="admin-tab-content">
+            <div class="admin-header">
+              <h2>Manage Orders</h2>
+            </div>
+
+            <!-- Orders Table -->
+            <div class="admin-table">
+              <table id="ordersTable">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Customer</th>
+                    <th>Phone</th>
+                    <th>Total</th>
+                    <th>Status</th>
+                    <th>Date</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="ordersTableBody">
+                  <!-- Orders will be loaded here -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Order Details Modal -->
+  <div id="orderModal" class="modal" style="display: none;">
+    <div class="modal-content large">
+      <div class="modal-header">
+        <h2>Order Details</h2>
+        <button class="close-modal" id="closeOrderModal">&times;</button>
+      </div>
+      <div id="orderModalContent">
+        <!-- Order details will be loaded here -->
+      </div>
+    </div>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Auravida</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="logo"><a href="index.html">Auravida</a></div>
+      <div class="nav-icons">
+        <a href="cart.html" class="cart-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Side Drawer Menu -->
+  <div class="side-drawer" id="sideDrawer">
+    <button class="close-drawer" id="closeDrawer">&times;</button>
+    <div class="drawer-content">
+      <a href="index.html" class="drawer-link">Home</a>
+      <a href="products.html" class="drawer-link">All Products</a>
+      <div class="drawer-section">
+        <h3>Categories</h3>
+        <a href="products.html?category=Clearance Sale" class="drawer-link">Clearance Sale</a>
+        <a href="products.html?category=New Arrivals" class="drawer-link">New Arrivals</a>
+        <a href="products.html?category=Face Washes" class="drawer-link">Face Washes</a>
+        <a href="products.html?category=Serums" class="drawer-link">Serums</a>
+        <a href="products.html?category=Haircare" class="drawer-link">Haircare</a>
+        <a href="products.html?category=Makeup" class="drawer-link">Makeup</a>
+        <a href="products.html?category=Bodycare" class="drawer-link">Bodycare</a>
+        <a href="products.html?category=Men" class="drawer-link">Men</a>
+        <a href="products.html?category=Skincare" class="drawer-link">Skincare</a>
+        <a href="products.html?category=Kids" class="drawer-link">Kids</a>
+        <a href="products.html?category=Soaps" class="drawer-link">Soaps</a>
+        <a href="products.html?category=Gifting" class="drawer-link">Gifting</a>
+      </div>
+      <div class="drawer-section">
+        <h3>Information</h3>
+        <a href="about.html" class="drawer-link">About Us</a>
+        <a href="contact.html" class="drawer-link">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overlay -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- About Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>About Us</h1>
+      <p>Learn more about our mission and values</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section">
+    <div class="container">
+      <div class="about-page">
+        <div class="about-story">
+          <h2>Our Story</h2>
+          <p>Auravida was born from a passion for natural skincare and a commitment to sustainability. We believe that everyone deserves access to high-quality, organic products that are kind to both your skin and the planet.</p>
+          <p>Our journey began in 2020 when we noticed a gap in the market for truly organic, affordable skincare products. We set out to create a brand that combines the best of nature with scientific innovation.</p>
+        </div>
+
+        <div class="about-mission">
+          <h2>Our Mission</h2>
+          <p>To provide premium organic skincare products that are accessible, effective, and environmentally sustainable. We strive to empower our customers to make conscious choices about their skincare routine.</p>
+        </div>
+
+        <div class="about-values">
+          <h2>Our Values</h2>
+          <div class="values-grid">
+            <div class="value-card">
+              <div class="value-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                </svg>
+              </div>
+              <h3>100% Organic</h3>
+              <p>All our products are made with certified organic ingredients, free from harmful chemicals and synthetic additives.</p>
+            </div>
+            <div class="value-card">
+              <div class="value-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <h3>Cruelty-Free</h3>
+              <p>We never test our products on animals. All our products are certified cruelty-free and vegan-friendly.</p>
+            </div>
+            <div class="value-card">
+              <div class="value-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <h3>Sustainable</h3>
+              <p>We use eco-friendly packaging and sustainable sourcing practices to minimize our environmental impact.</p>
+            </div>
+            <div class="value-card">
+              <div class="value-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                  <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                  <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                </svg>
+              </div>
+              <h3>Inclusive</h3>
+              <p>Our products are designed for all skin types and genders. Beauty knows no boundaries.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-quality">
+          <h2>Quality Promise</h2>
+          <p>Every Auravida product undergoes rigorous testing to ensure safety, efficacy, and quality. We work with certified organic farms and sustainable suppliers to source the finest ingredients.</p>
+          <ul class="quality-list">
+            <li>✓ Dermatologically tested</li>
+            <li>✓ Free from parabens, sulfates, and phthalates</li>
+            <li>✓ Made in small batches for freshness</li>
+            <li>✓ 30-day satisfaction guarantee</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Experience the Auravida Difference?</h2>
+      <p>Explore our range of organic skincare products today.</p>
+      <a href="products.html" class="btn btn-primary">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Auravida</h3>
+          <p>Your trusted source for organic skincare products.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-section">
+          <h4>Customer Service</h4>
+          <a href="contact.html">Contact Us</a>
+          <a href="#">Shipping Info</a>
+          <a href="#">Returns</a>
+          <a href="#">FAQ</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Auravida Organic Products. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

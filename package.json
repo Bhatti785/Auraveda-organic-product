@@ -1,0 +1,25 @@
+{
+  "name": "auravida-organic-products",
+  "version": "1.0.0",
+  "description": "A lightweight e-commerce website for organic skincare products",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node server/index.js"
+  },
+  "keywords": [
+    "ecommerce",
+    "organic",
+    "skincare",
+    "nodejs",
+    "express"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2",
+    "express-session": "^1.17.3"
+  }
+}

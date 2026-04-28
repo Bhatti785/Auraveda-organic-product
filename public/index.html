@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auravida - Organic Products</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="logo">Auravida</div>
+      <div class="nav-icons">
+        <a href="cart.html" class="cart-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Side Drawer Menu -->
+  <div class="side-drawer" id="sideDrawer">
+    <button class="close-drawer" id="closeDrawer">&times;</button>
+    <div class="drawer-content">
+      <a href="index.html" class="drawer-link">Home</a>
+      <a href="products.html" class="drawer-link">All Products</a>
+      <div class="drawer-section">
+        <h3>Categories</h3>
+        <a href="products.html?category=Clearance Sale" class="drawer-link">Clearance Sale</a>
+        <a href="products.html?category=New Arrivals" class="drawer-link">New Arrivals</a>
+        <a href="products.html?category=Face Washes" class="drawer-link">Face Washes</a>
+        <a href="products.html?category=Serums" class="drawer-link">Serums</a>
+        <a href="products.html?category=Haircare" class="drawer-link">Haircare</a>
+        <a href="products.html?category=Makeup" class="drawer-link">Makeup</a>
+        <a href="products.html?category=Bodycare" class="drawer-link">Bodycare</a>
+        <a href="products.html?category=Men" class="drawer-link">Men</a>
+        <a href="products.html?category=Skincare" class="drawer-link">Skincare</a>
+        <a href="products.html?category=Kids" class="drawer-link">Kids</a>
+        <a href="products.html?category=Soaps" class="drawer-link">Soaps</a>
+        <a href="products.html?category=Gifting" class="drawer-link">Gifting</a>
+      </div>
+      <div class="drawer-section">
+        <h3>Information</h3>
+        <a href="about.html" class="drawer-link">About Us</a>
+        <a href="contact.html" class="drawer-link">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overlay -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Nature's Best for Your Skin</h1>
+      <p>Discover our range of organic, cruelty-free skincare products</p>
+      <a href="products.html" class="btn btn-primary">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Featured Products</h2>
+      <div class="products-grid" id="featuredProducts">
+        <!-- Products will be loaded here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="section section-light">
+    <div class="container">
+      <h2 class="section-title">Shop by Category</h2>
+      <div class="categories-grid">
+        <a href="products.html?category=Face Washes" class="category-card">
+          <h3>Face Washes</h3>
+        </a>
+        <a href="products.html?category=Serums" class="category-card">
+          <h3>Serums</h3>
+        </a>
+        <a href="products.html?category=Haircare" class="category-card">
+          <h3>Haircare</h3>
+        </a>
+        <a href="products.html?category=Bodycare" class="category-card">
+          <h3>Bodycare</h3>
+        </a>
+        <a href="products.html?category=Men" class="category-card">
+          <h3>Men</h3>
+        </a>
+        <a href="products.html?category=Kids" class="category-card">
+          <h3>Kids</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section">
+    <div class="container">
+      <div class="about-section">
+        <div class="about-text">
+          <h2>Why Choose Auravida?</h2>
+          <p>At Auravida, we believe in the power of nature. Our products are crafted with organic ingredients, free from harmful chemicals, and never tested on animals.</p>
+          <ul class="features-list">
+            <li>✓ 100% Organic Ingredients</li>
+            <li>✓ Cruelty-Free</li>
+            <li>✓ Eco-Friendly Packaging</li>
+            <li>✓ Suitable for All Skin Types</li>
+          </ul>
+          <a href="about.html" class="btn btn-secondary">Learn More</a>
+        </div>
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600" alt="Organic Skincare">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Auravida</h3>
+          <p>Your trusted source for organic skincare products.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-section">
+          <h4>Customer Service</h4>
+          <a href="contact.html">Contact Us</a>
+          <a href="#">Shipping Info</a>
+          <a href="#">Returns</a>
+          <a href="#">FAQ</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Auravida Organic Products. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Load featured products on home page
+    loadFeaturedProducts();
+  </script>
+</body>
+</html>
