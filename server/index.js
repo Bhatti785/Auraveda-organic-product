@@ -15,6 +15,7 @@ const ADMIN_PASSWORD = '1234';
 // Middleware
 app.use(cors());
 app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, '../')));
 app.use(express.static(path.join(__dirname, '../public')));
 
 // Session middleware

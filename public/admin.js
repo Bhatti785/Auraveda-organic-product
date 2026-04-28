@@ -93,7 +93,7 @@ function loadProducts() {
       tbody.innerHTML = products.map(product => `
         <tr>
           <td>${product.id}</td>
-          <td><img src="${product.image}" alt="${product.name}"></td>
+          <td><img src="${product.image}" alt="${product.name}" loading="lazy"></td>
           <td>${product.name}</td>
           <td>${product.category}</td>
           <td>Rs ${product.price.toLocaleString()}</td>

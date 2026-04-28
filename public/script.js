@@ -140,7 +140,7 @@ function loadFeaturedProducts() {
       const featured = products.slice(0, 6);
       container.innerHTML = featured.map(product => `
         <div class="product-card" onclick="window.location.href='product-details.html?id=${product.id}'">
-          <img src="${product.image}" alt="${product.name}" class="product-image">
+          <img src="${product.image}" alt="${product.name}" class="product-image" loading="lazy">
           <div class="product-info">
             <span class="product-category">${product.category}</span>
             <h3 class="product-title">${product.name}</h3>
@@ -196,7 +196,7 @@ function loadProducts() {
 
       container.innerHTML = products.map(product => `
         <div class="product-card" onclick="window.location.href='product-details.html?id=${product.id}'">
-          <img src="${product.image}" alt="${product.name}" class="product-image">
+          <img src="${product.image}" alt="${product.name}" class="product-image" loading="lazy">
           <div class="product-info">
             <span class="product-category">${product.category}</span>
             <h3 class="product-title">${product.name}</h3>
@@ -281,7 +281,7 @@ function loadCart() {
 
   cartItems.innerHTML = cart.map(item => `
     <div class="cart-item">
-      <img src="${item.image}" alt="${item.name}" class="cart-item-image">
+      <img src="${item.image}" alt="${item.name}" class="cart-item-image" loading="lazy">
       <div class="cart-item-details">
         <h3 class="cart-item-name">${item.name}</h3>
         <div class="cart-item-price">${formatPrice(item.price)}</div>
