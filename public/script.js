@@ -125,7 +125,7 @@ function calculateTotal() {
 
 // Format Price
 function formatPrice(price) {
-  return '₹' + price.toLocaleString();
+  return 'Rs ' + price.toLocaleString();
 }
 
 // Load Featured Products (Home Page)

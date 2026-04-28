@@ -96,7 +96,7 @@ function loadProducts() {
           <td><img src="${product.image}" alt="${product.name}"></td>
           <td>${product.name}</td>
           <td>${product.category}</td>
-          <td>₹${product.price.toLocaleString()}</td>
+          <td>Rs ${product.price.toLocaleString()}</td>
           <td>
             <button class="action-btn edit-btn" onclick="editProduct(${product.id})">Edit</button>
             <button class="action-btn delete-btn" onclick="deleteProduct(${product.id})">Delete</button>
@@ -123,7 +123,7 @@ function loadOrders() {
           <td>${order.id}</td>
           <td>${order.customer.name}</td>
           <td>${order.customer.phone}</td>
-          <td>₹${order.total.toLocaleString()}</td>
+          <td>Rs ${order.total.toLocaleString()}</td>
           <td><span class="status-badge status-${order.status}">${order.status}</span></td>
           <td>${new Date(order.createdAt).toLocaleDateString()}</td>
           <td>
@@ -268,7 +268,7 @@ function viewOrder(orderId) {
             ${order.items.map(item => `
               <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--border-color);">
                 <span>${item.name} × ${item.quantity}</span>
-                <span>₹${(item.price * item.quantity).toLocaleString()}</span>
+                <span>Rs ${(item.price * item.quantity).toLocaleString()}</span>
               </div>
             `).join('')}
           </div>
@@ -277,15 +277,15 @@ function viewOrder(orderId) {
             <h3 style="color: var(--primary-navy); margin-bottom: 10px;">Order Summary</h3>
             <div style="display: flex; justify-content: space-between; padding: 10px 0;">
               <span>Subtotal:</span>
-              <span>₹${order.subtotal.toLocaleString()}</span>
+              <span>Rs ${order.subtotal.toLocaleString()}</span>
             </div>
             <div style="display: flex; justify-content: space-between; padding: 10px 0;">
               <span>Shipping:</span>
-              <span>₹${order.shipping.toLocaleString()}</span>
+              <span>Rs ${order.shipping.toLocaleString()}</span>
             </div>
             <div style="display: flex; justify-content: space-between; padding: 10px 0; font-weight: 700; font-size: 1.2rem; color: var(--primary-gold);">
               <span>Total:</span>
-              <span>₹${order.total.toLocaleString()}</span>
+              <span>Rs ${order.total.toLocaleString()}</span>
             </div>
           </div>
 
