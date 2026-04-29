@@ -9,4 +9,4 @@ Disallow: /admin.html
 Disallow: /admin-login.html
 
 # Sitemap location
-Sitemap: https://auravida-organic.com/sitemap.xml
+Sitemap: https://auraveda-organic-product-production.up.railway.app/sitemap.xml
